@@ -1,10 +1,9 @@
 
 body {
 	font-family: 'Abel', sans-serif;
+	background: url(../wet_snow/wet_snow.png);
 	}
-/*==============================
-	Global
-==============================*/
+
 p {
 	line-height: 24px;
 }
@@ -19,28 +18,8 @@ article {
 	padding-top: 200px;
 }
  
-/*==============================
-	Logo
-==============================*/
-header h1 a {
-	background: #ccc url("../img/logo.png") no-repeat center center;
-	border-radius: 150px;
-	border: 4px solid #fff;
-	display: block;
-	height: 150px;
-	left: 40px;
-	position: absolute;
-	text-indent: -999em;
-	width: 150px;
-	z-index: 2;
-	
-	/* CSS 3*/
-	transition: background-color 1s;
-}
- 
-header h1 a:hover {
-	background: #666 url("../img/logo.png") no-repeat center center;
-}
+
+
  
  
 /*==============================
@@ -67,7 +46,7 @@ nav li:nth-child(1) {
 }
  
 nav {
-	background: #666;	
+	background: #404749;	
 	height: 64px;
 	position: absolute;
 	left: 0;
@@ -75,7 +54,7 @@ nav {
 	width: 960px;
 	
 	/* CSS3 */
-	box-shadow: inset 0px 0px 10px 2px #333;
+	box-shadow: inset 0px 0px 10px 2px #999;
 }
  
 nav a:link,
@@ -222,3 +201,33 @@ label {
   text-decoration: none;
   transition: color .1s;
 }
+
+/*==================
+	DESKTOP
+====================*/	
+@media screen and (max-width: 1024px) {
+	body {
+		background: red;
+		}
+	}
+	/*end of desktop*/
+/*==================
+	TABLET
+====================*/	
+@media screen and (max-width: 768px) {
+	body {
+		background: green;
+		}
+	}
+/*end of tablet*/	
+/*==================
+	PHONE
+====================*/		
+@media screen and (max-width: 480px) {
+	
+	aside {
+	float: none;	
+		}
+	
+	}	
+/*end of phone*/	
